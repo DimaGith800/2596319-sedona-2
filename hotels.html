@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гостиницы в Седоне</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header_navigation">
+        <a class="header_navigation--logo" href="index.html">logo</a>
+        <ul class="header_navigation--linklist">
+          <li class="header_navigation--linklist--item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header_navigation--linklist--item">
+            <a href="#">О Седоне</a>
+          </li>
+          <li class="header_navigation--linklist--item">
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="header_navigation--interactlist">
+          <li class="header_navigation--interactlist--item">
+            <a href="#"><img src="#" alt="Ссылка на страницу поиска"></a>
+          </li>
+          <li class="header_navigation--interactlist--item">
+            <a class="header_navigation--interactlist--item--favorite" href="#"></a>
+            <button class="header_navigation--interactlist--item--quantity">12</button>
+          </li>
+          <li class="header_navigation--interactlist--item">
+            <a href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hotels">
+        <h1 class="hotels_title">Гостиницы Седоны</h1>
+        <ul class="hotels_breadcrumbs">
+          <li class="hotels_breadcrumbs--item">
+            <a href="index.html"><img src="#" alt="На главную"></a>
+          </li>
+          <li class="hotels_breadcrumbs--item">
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+      </section>
+      <section class="filters">
+        <h2 class="filters_title visually_hidden"></h2>
+        <form class="filters_container" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="filters_container--content">
+            <legend class="filters_container--content--title">Инфраструктура:</legend>
+            <ul class="filters_container--content--inputlist">
+              <li class="filters_container--content--inputlist--item">
+                <label class="filters_container--content--inputlist--item--label" for="pool">
+                  <input class="filters_container--content--inputlist--item--label--input" name="infastracture" type="checkbox" id="pool" value="pool" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="filters_container--content--inputlist--item">
+                <label class="filters_container--content--inputlist--item--label" for="parkinglot">
+                  <input class="filters_container--content--inputlist--item--label--input" name="infastracture" type="checkbox" id="parkinglot" value="parkinglot" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="filters_container--content--inputlist--item">
+                <label class="filters_container--content--inputlist--item--label" for="wifi">
+                  <input class="filters_container--content--inputlist--item--label--input" name="infastracture" type="checkbox" id="wifi" value="wifi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters_container--content">
+            <legend class="filters_container--content--title">Тип жилья:</legend>
+            <ul class="filters_container--content--inputlist">
+              <li class="filters_container--content--inputlist--item">
+                <label class="filters_container--content--inputlist--item--label" for="hotel">
+                  <input class="filters_container--content--inputlist--item--label--input" type="radio" name="housing_type" id="hotel" value="hotel" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="filters_container--content--inputlist--item">
+                <label class="filters_container--content--inputlist--item--label" for="motel">
+                  <input class="filters_container--content--inputlist--item--label--input" type="radio"  name="housing_type" id="motel" value="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="filters_container--content--inputlist--item">
+                <label class="filters_container--content--inputlist--item--label" for="apartment">
+                  <input class="filters_container--content--inputlist--item--label--input" type="radio"  name="housing_type" id="apartment" value="apartment">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters_container--price">
+            <legend class="filters_container--price--title">Стоимость, ₽:</legend>
+            <div class="filters_container--price--boundaries">
+              <input class="filters_container--price--boundaries--input" type="number" name="from" placeholder="от" value="0" >
+              <input class="filters_container--price--boundaries--input" type="number" name="to" placeholder="до" value="9000">
+            </div>
+            <img class="filters_container--price--slider" src="#" alt="">
+          </fieldset>
+          <button class="filters_container--apply" type="submit">Применить</button>
+          <button class="filters_container--reset" type="reset">Сбросить</button>
+        </form>
+      </section>
+      <section class="find">
+        <h2 class="find_title">Найдено гостиниц: 38</h2>
+        <select class="find_sortingselect" name="sort" id="sortselect">
+          <option class="find_sortingselect--option" value="cheapest first" selected>Сначала дешевые</option>
+        </select>
+        <ul class="find_appearance">
+          <li class="find_apperance--item">
+            <button class="find_apperance--item--button">
+              <img src="#" alt="">
+            </button>
+          </li>
+          <li class="find_apperance--item">
+            <button class="find_apperance--item--button">
+              <img src="#" alt="">
+            </button>
+          </li>
+          <li class="find_apperance--item">
+            <button class="find_apperance--item--button">
+              <img src="#" alt="">
+            </button>
+          </li>
+        </ul>
+        <ul class="find_container">
+          <li class="find_container--content">
+            <img class="find_container--content--img" src="#" alt="Пространство между коричневыми камнями, заполненное звездами на темно-синем небе">
+            <h3 class="find_container--content--title">Amara Resort & Spa</h3>
+            <p class="find_container--content--housingtype">Гостиница</p>
+            <p class="find_container--content--price">От 4000 ₽</p>
+            <a class="find_container--content--more" href="#">Подробнее</a>
+            <button class="find_container--content--favorite">В избранное</button>
+            <div class="find_container--content--stars">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+            </div>
+            <span class="find_container--content--rating">Рейтинг: 8,5</span>
+          </li>
+          <li class="find_container--content">
+            <img class="find_container--content--img" src="#" alt="Радуга над лесистым горизонтом впадает прямо в огромные коричневые камни">
+            <h3 class="find_container--content--title">Villas at Poco Diablo</h3>
+            <p class="find_container--content--housingtype">Гостиница</p>
+            <p class="find_container--content--price">От 5000 ₽</p>
+            <a class="find_container--content--more" href="#">Подробнее</a>
+            <button class="find_container--content--favorite">В избранном</button>
+            <div class="find_container--content--stars">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+            </div>
+            <span class="find_container--content--rating">Рейтинг: 9,2</span>
+          </li>
+          <li class="find_container--content">
+            <img class="find_container--content--img" src="#" alt="Огромная коричневая гора из коричневых камней над лесистым горизонтом и на фоне синего неба">
+            <h3 class="find_container--content--title">Desert Quail Inn</h3>
+            <p class="find_container--content--housingtype">Гостиница</p>
+            <p class="find_container--content--price">От 2500 ₽</p>
+            <a class="find_container--content--more" href="#">Подробнее</a>
+            <button class="find_container--content--favorite">В избранное</button>
+            <div class="find_container--content--stars">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+            </div>
+            <span class="find_container--content--rating">Рейтинг: 6,9</span>
+          </li>
+          <li class="find_container--content">
+            <img class="find_container--content--img" src="#" alt="Небольшая коричневая гора на фоне оранжевого звёздного неба">
+            <h3 class="find_container--content--title">GreenTree Inn</h3>
+            <p class="find_container--content--housingtype">Гостиница</p>
+            <p class="find_container--content--price">От 1500 ₽</p>
+            <a class="find_container--content--more" href="#">Подробнее</a>
+            <button class="find_container--content--favorite">В избранное</button>
+            <div class="find_container--content--stars">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+              <img src="#" alt="Звезда">
+            </div>
+            <span class="find_container--content--rating">Рейтинг: 5,0</span>
+          </li>
+        </ul>
+        <ul class="find_container--pagination">
+          <li class="find_container--pagination--item">1</li>
+          <li class="find_container--pagination--item">2</li>
+          <li class="find_container--pagination--item">3</li>
+          <li class="find_container--pagination--item">4</li>
+          <li class="find_container--pagination--item">...</li>
+          <li class="find_container--pagination--item">10</li>
+        </ul>
+      </section>
+      <section class="subscribe">
+        <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
+        <p class="subscribe_desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe_container" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="subscribe_container--input" type="email" placeholder="Ваш e-mail" name="email" required>
+          <button class="subscribe_container--button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer_socials">
+        <li class="footer_socials--social">
+          <a class="footer_socials--social--link" href="https://vk.com/htmlacademy">
+            <img src="#" alt="Страница в ВКонтакте">
+          </a>
+        </li>
+        <li class="footer_socials--social">
+          <a class="footer_socials--social--link" href="https://t.me/htmlacademy">
+            <img src="#" alt="Телеграм-чат">
+          </a>
+        </li>
+        <li class="footer_socials--social">
+          <a class="footer_socials--social--link" href="https://www.youtube.com/user/htmlacademyru">
+            <img src="#" alt="Ютуб-канал">
+          </a>
+        </li>
+      </ul>
+      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="Автор: HTML Academy"></a>
+    </footer>
+  </body>
+</html>
