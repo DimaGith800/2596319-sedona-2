@@ -6,7 +6,7 @@
     <title>Седона, Городок в Аризоне</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-test="header">
       <nav class="header_navigation">
         <a class="header_navigation--logo" href="index.html">logo</a>
         <ul class="header_navigation--linklist">
@@ -34,11 +34,11 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="welcome">
+    <main data-test="main">
+      <section class="welcome" data-test="hero">
         <img class="welcome_img" src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
-      <section class="pros">
+      <section class="pros" data-test="advantages">
         <h2 class="pros_title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!
         </h2>
@@ -94,14 +94,14 @@
           </li>
         </ul>
       </section>
-      <section class="search">
+      <section class="search" data-test="search">
         <h2 class="search_title">Заинтересовались?</h2>
         <p class="search_desc">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="search_openmodalbutton">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
         <p class="subscribe_desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe_container" action="https://echo.htmlacademy.ru/" method="post">
@@ -110,7 +110,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <ul class="footer_socials">
         <li class="footer_socials--social">
           <a class="footer_socials--social--link" href="https://vk.com/htmlacademy">
