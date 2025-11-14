@@ -1,0 +1,298 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header_navigation--linklist--item a {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+}
+.header_navigation--interactlist--item a {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header_navigation--interactlist--item--wantthere a {
+  background-color: #756157;
+  color: #FFFFFF;
+}
+.filters_background {
+  background-image: url(../images/background-filtersa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hotels_title {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 60px;
+  line-height: 78px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+.hotels_breadcrumbs--item:nth-child(3) a {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.filters_container--content--title {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.filters_container--content--inputlist--item--label {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+
+.filters_container--price--title {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.filters_container--apply {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.filters_container--reset {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: none;
+}
+
+.find_title {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.find_sortingselect {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #333;
+}
+
+.find_container--content--title {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+.find_container--content--housingtype {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #333;
+}
+
+.find_container--content--price {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #333333;
+}
+
+.find_container--content--more {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.find_container--content--favorite {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+.find_container--content:nth-child(2) .find_container--content--favorite {
+  background-color: #7DB54F;
+}
+.find_container--content--rating {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.find_container--pagination--item {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+.subscribe_title {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.subscribe_desc {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #333333;
+}
+
+.subscribe_container--input {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+}
+
+.subscribe_container--button {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer_phone {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}

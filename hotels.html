@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы в Седоне</title>
+    <link rel="stylesheet" href="styles/hotels.css">
   </head>
   <body>
     <header class="header" data-test="header">
@@ -11,7 +12,7 @@
         <a class="header_navigation--logo" href="index.html"><img src="images/logo.svg" width="140" height="70" alt="Городок Седона"></a>
         <ul class="header_navigation--linklist">
           <li class="header_navigation--linklist--item">
-            <a href="#">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="header_navigation--linklist--item">
             <a href="#">О Седоне</a>
@@ -40,78 +41,81 @@
       </nav>
     </header>
     <main data-test="main">
-      <section class="hotels">
-        <h1 class="hotels_title">Гостиницы Седоны</h1>
-        <ul class="hotels_breadcrumbs">
-          <li class="hotels_breadcrumbs--item">
-            <a href="index.html"><img src="images/minihome.svg" alt="На главную"></a>
-          </li>
-          <li class="hotels_breadcrumbs--item">
-            <a href="#">Гостиницы</a>
-          </li>
-        </ul>
-      </section>
-      <section class="filters" data-test="filter">
-        <h2 class="filters_title visually_hidden"></h2>
-        <form class="filters_container" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="filters_container--content">
-            <legend class="filters_container--content--title">Инфраструктура:</legend>
-            <ul class="filters_container--content--inputlist">
-              <li class="filters_container--content--inputlist--item">
-                <label class="filters_container--content--inputlist--item--label" for="pool">
-                  <input class="filters_container--content--inputlist--item--label--input" name="infastracture" type="checkbox" id="pool" value="pool" checked>
-                  Бассейн
-                </label>
-              </li>
-              <li class="filters_container--content--inputlist--item">
-                <label class="filters_container--content--inputlist--item--label" for="parkinglot">
-                  <input class="filters_container--content--inputlist--item--label--input" name="infastracture" type="checkbox" id="parkinglot" value="parkinglot" checked>
-                  Парковка
-                </label>
-              </li>
-              <li class="filters_container--content--inputlist--item">
-                <label class="filters_container--content--inputlist--item--label" for="wifi">
-                  <input class="filters_container--content--inputlist--item--label--input" name="infastracture" type="checkbox" id="wifi" value="wifi">
-                  Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filters_container--content">
-            <legend class="filters_container--content--title">Тип жилья:</legend>
-            <ul class="filters_container--content--inputlist">
-              <li class="filters_container--content--inputlist--item">
-                <label class="filters_container--content--inputlist--item--label" for="hotel">
-                  <input class="filters_container--content--inputlist--item--label--input" type="radio" name="housing_type" id="hotel" value="hotel" checked>
-                  Гостиница
-                </label>
-              </li>
-              <li class="filters_container--content--inputlist--item">
-                <label class="filters_container--content--inputlist--item--label" for="motel">
-                  <input class="filters_container--content--inputlist--item--label--input" type="radio"  name="housing_type" id="motel" value="motel">
-                  Мотель
-                </label>
-              </li>
-              <li class="filters_container--content--inputlist--item">
-                <label class="filters_container--content--inputlist--item--label" for="apartment">
-                  <input class="filters_container--content--inputlist--item--label--input" type="radio"  name="housing_type" id="apartment" value="apartment">
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filters_container--price">
-            <legend class="filters_container--price--title">Стоимость, ₽:</legend>
-            <div class="filters_container--price--boundaries">
-              <input class="filters_container--price--boundaries--input" type="number" name="from" placeholder="от" value="0" >
-              <input class="filters_container--price--boundaries--input" type="number" name="to" placeholder="до" value="9000">
-            </div>
-            <img class="filters_container--price--slider" src="#" alt="">
-          </fieldset>
-          <button class="filters_container--apply" type="submit">Применить</button>
-          <button class="filters_container--reset" type="reset">Сбросить</button>
-        </form>
-      </section>
+      <div class="filters_background">
+        <section class="hotels">
+          <h1 class="hotels_title">Гостиницы Седоны</h1>
+          <ul class="hotels_breadcrumbs">
+            <li class="hotels_breadcrumbs--item">
+              <a href="index.html"><img src="images/minihome.svg" alt="На главную"></a>
+            </li>
+            <li class="hotels_breadcrumbs--item"></li>
+            <li class="hotels_breadcrumbs--item">
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </section>
+        <section class="filters" data-test="filter">
+          <h2 class="filters_title visually_hidden"></h2>
+          <form class="filters_container" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="filters_container--content">
+              <legend class="filters_container--content--title">Инфраструктура:</legend>
+              <ul class="filters_container--content--inputlist">
+                <li class="filters_container--content--inputlist--item">
+                  <label class="filters_container--content--inputlist--item--label" for="pool">
+                    <input class="filters_container--content--inputlist--item--label--input" name="infastracture" type="checkbox" id="pool" value="pool" checked>
+                    Бассейн
+                  </label>
+                </li>
+                <li class="filters_container--content--inputlist--item">
+                  <label class="filters_container--content--inputlist--item--label" for="parkinglot">
+                    <input class="filters_container--content--inputlist--item--label--input" name="infastracture" type="checkbox" id="parkinglot" value="parkinglot" checked>
+                    Парковка
+                  </label>
+                </li>
+                <li class="filters_container--content--inputlist--item">
+                  <label class="filters_container--content--inputlist--item--label" for="wifi">
+                    <input class="filters_container--content--inputlist--item--label--input" name="infastracture" type="checkbox" id="wifi" value="wifi">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters_container--content">
+              <legend class="filters_container--content--title">Тип жилья:</legend>
+              <ul class="filters_container--content--inputlist">
+                <li class="filters_container--content--inputlist--item">
+                  <label class="filters_container--content--inputlist--item--label" for="hotel">
+                    <input class="filters_container--content--inputlist--item--label--input" type="radio" name="housing_type" id="hotel" value="hotel" checked>
+                    Гостиница
+                  </label>
+                </li>
+                <li class="filters_container--content--inputlist--item">
+                  <label class="filters_container--content--inputlist--item--label" for="motel">
+                    <input class="filters_container--content--inputlist--item--label--input" type="radio"  name="housing_type" id="motel" value="motel">
+                    Мотель
+                  </label>
+                </li>
+                <li class="filters_container--content--inputlist--item">
+                  <label class="filters_container--content--inputlist--item--label" for="apartment">
+                    <input class="filters_container--content--inputlist--item--label--input" type="radio"  name="housing_type" id="apartment" value="apartment">
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters_container--price">
+              <legend class="filters_container--price--title">Стоимость, ₽:</legend>
+              <div class="filters_container--price--boundaries">
+                <input class="filters_container--price--boundaries--input" type="number" name="from" placeholder="от" value="0" >
+                <input class="filters_container--price--boundaries--input" type="number" name="to" placeholder="до" value="9000">
+              </div>
+              <img class="filters_container--price--slider" src="#" alt="">
+            </fieldset>
+            <button class="filters_container--apply" type="submit">Применить</button>
+            <button class="filters_container--reset" type="reset">Сбросить</button>
+          </form>
+        </section>
+      </div>
       <section class="find" data-test="catalog">
         <h2 class="find_title">Найдено гостиниц: 38</h2>
         <select class="find_sortingselect" name="sort" id="sortselect">
@@ -232,7 +236,7 @@
           </a>
         </li>
       </ul>
-      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="images/logo_htmlacademy.svg" alt="Автор: HTML Academy"></a>
     </footer>
   </body>
