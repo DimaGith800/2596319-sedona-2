@@ -15,6 +15,11 @@
 
 body {
   background-color: #f2f2f2;
+  padding: 0 40px;
+}
+
+.visually_hidden {
+  display: none;
 }
 
 .page_container {
@@ -47,6 +52,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
 }
 .header_navigation--linklist--item a {
   font-family: PT Sans;
@@ -82,6 +88,18 @@ body {
 .header_navigation--interactlist--item--wantthere a {
   background-color: #756157;
   color: #FFFFFF;
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 34px;
+  border-radius: 4px;
 }
 .header_navigation--interactlist--item--favorite--quantity {
   font-family: PT Sans;
@@ -95,10 +113,17 @@ body {
   outline: none;
   background-color: #7DB54F;
 }
-.filters_background {
+.filter_background {
   background-image: url(../images/background-filtersa.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.filter_container {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 .hotels_title {
   font-family: PT Sans;
@@ -108,6 +133,8 @@ body {
   line-height: 78px;
   letter-spacing: 0%;
   color: #FFFFFF;
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 .hotels_breadcrumbs {
   list-style: none;
@@ -116,6 +143,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 0;
+  margin-bottom: 40px;
 }
 
 .hotels_breadcrumbs--item:nth-child(3) a {
@@ -142,9 +171,15 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.filters_container--content {
+  border: none;
+}
 .filters_container--content--inputlist {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 32px;
+  gap: 16px;
 }
 .filters_container--content--title {
   font-family: PT Sans;
@@ -165,7 +200,9 @@ body {
   letter-spacing: 0%;
   color: #FFFFFF;
 }
-
+.filters_container--price {
+  border: none;
+}
 .filters_container--price--title {
   font-family: PT Sans;
   font-weight: 700;
@@ -175,6 +212,7 @@ body {
   letter-spacing: 0%;
   text-transform: capitalize;
   color: #FFFFFF;
+  margin-bottom: 32px;
 }
 .filters_container--pricewrapper {
   width: 100%;
@@ -182,6 +220,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+.filters_container--price--boundaries--input {
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+}
+.filters_container--price--boundaries--input {
+  width: 103px;
+}
+.filters_container--price--boundaries--input:nth-child(1) {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.filters_container--price--boundaries--input:nth-child(2) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .filters_conf {
   display: flex;
@@ -199,6 +253,9 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
+  padding: 8px 50px;
+  border-radius: 4px;
+  border: none;
 }
 
 .filters_container--reset {
@@ -213,14 +270,22 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background: none;
+  border: none;
+  padding: 8px 50px;
+  margin-top: 32px;
 }
-.find_maininfo {
+.find {
   width: 100%;
   max-width: 1060px;
   margin: 0 auto;
+  margin-bottom: 96px;
+}
+.find_maininfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 .find_appearance {
   width: 100%;
@@ -228,6 +293,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  margin: 0;
 }
 .find_title {
   font-family: PT Sans;
@@ -238,6 +304,7 @@ body {
   letter-spacing: 0%;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
 }
 
 .find_sortingselect {
@@ -248,8 +315,22 @@ body {
   line-height: 21px;
   letter-spacing: 0%;
   color: #333;
+  margin: 0;
 }
-
+.find_container {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.find_container--content {
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+}
 .find_container--content--title {
   font-family: PT Sans;
   font-weight: 700;
@@ -258,8 +339,16 @@ body {
   line-height: 28px;
   letter-spacing: 0%;
   color: #000000;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
-
+.find_container--content--infowrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
 .find_container--content--housingtype {
   font-family: PT Sans;
   font-weight: 400;
@@ -268,6 +357,7 @@ body {
   line-height: 21px;
   letter-spacing: 0%;
   color: #333;
+  margin: 0;
 }
 
 .find_container--content--price {
@@ -279,6 +369,7 @@ body {
   letter-spacing: 0%;
   text-align: right;
   color: #333333;
+  margin: 0;
 }
 
 .find_container--content--more {
@@ -329,6 +420,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding-left: 0;
 }
 .find_container--pagination--item {
   font-family: PT Sans;
@@ -353,6 +445,14 @@ body {
   color: #000;
   background-color: #FFF;
 }
+
+.subscribe_container {
+  width: 100%;
+  max-width: 685px;
+  margin: 0 auto;
+  display: flex;
+}
+
 .subscribe_title {
   font-family: PT Sans;
   font-weight: 700;
@@ -363,6 +463,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  margin-bottom: 20px;
 }
 
 .subscribe_desc {
@@ -383,6 +484,7 @@ body {
   max-width: 685px;
   margin: 0 auto;
   display: flex;
+  margin-top: 54px;
 }
 .subscribe_container--input {
   font-family: PT Sans;
@@ -392,6 +494,14 @@ body {
   letter-spacing: 0%;
   vertical-align: middle;
   color: #000000;
+  width: 100%;
+  max-width: 452px;
+  padding: 14px 0 14px 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+  outline: none;
+  background:#F2F2F2;
 }
 
 .subscribe_container--button {
@@ -407,6 +517,10 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   border: none;
+  padding: 8px 50px;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .footer {
   width: 100%;
@@ -415,6 +529,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
 }
 .footer_socials {
   list-style: none;
@@ -422,6 +538,7 @@ body {
   max-width: 150px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer_phone {
   font-family: PT Sans;

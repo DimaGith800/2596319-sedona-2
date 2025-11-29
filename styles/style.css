@@ -15,6 +15,11 @@
 
 body {
   background-color: #f2f2f2;
+  padding: 0 40px;
+}
+
+.visually_hidden {
+  display: none;
 }
 
 .page_container {
@@ -47,6 +52,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
 }
 .header_navigation--linklist--item a {
   font-family: PT Sans;
@@ -82,6 +88,18 @@ body {
 .header_navigation--interactlist--item--wantthere a {
   background-color: #756157;
   color: #FFFFFF;
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 34px;
+  border-radius: 4px;
 }
 .header_navigation--interactlist--item--favorite--quantity {
   font-family: PT Sans;
@@ -99,11 +117,15 @@ body {
   background-image: url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 70px;
+  margin-top: -6px;
 }
 
 .welcome_img {
   display: block;
   margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 
@@ -132,17 +154,39 @@ body {
   letter-spacing: 0%;
   text-align: center;
   color: #333333;
+  margin-top: 25px;
+  margin-bottom: 90px;
 }
 .pros_container {
   list-style: none;
   padding-left: 0;
 }
+
+.pros_container--reason {
+  padding: 102px 0;
+  width: 400px;
+}
 .pros_container--reason:nth-child(1) {
   background-color: #82B3D3;
 }
 
+.pros_container--reason:nth-child(1) .pros_container--reason--title {
+  color: #FFFFFF;
+}
+
+.pros_container--reason:nth-child(1) .pros_container--reason--desc {
+  color: #FFFFFF;
+}
 .pros_container--reason:nth-child(7) {
   background-color: #82B3D3;
+}
+
+.pros_container--reason:nth-child(7) .pros_container--reason--title {
+  color: #FFFFFF;
+}
+
+.pros_container--reason:nth-child(7) .pros_container--reason--desc {
+  color: #FFFFFF;
 }
 
 .pros_container--reason:nth-child(3) {
@@ -166,6 +210,7 @@ body {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .pros_container--reason--desc {
@@ -177,6 +222,8 @@ body {
   letter-spacing: 0%;
   text-align: center;
   color: #333333;
+  width: 230px;
+  margin: 0 auto;
 }
 
 .whyus_title {
@@ -192,6 +239,8 @@ body {
   width: 505px;
   display: block;
   margin: 0 auto;
+  margin-top: 64px;
+  margin-bottom: 20px;
 }
 
 .whyus_desc {
@@ -203,6 +252,7 @@ body {
   letter-spacing: 0%;
   text-align: center;
   color: #333333;
+  margin-bottom: 64px;
 }
 
 .whyus_container {
@@ -212,10 +262,14 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
 }
 .whyus_container--content:nth-child(2n-1) {
   background-color: #83B3D31F;
+}
+.whyus_container--content{
+  padding: 80px 0;
+  width: 400px;
+
 }
 
 .whyus_container--content--title {
@@ -228,6 +282,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .whyus_container--content--desc {
@@ -239,6 +295,8 @@ body {
   letter-spacing: 0%;
   text-align: center;
   color: #333333;
+  width: 230px;
+  margin: 0 auto;
 }
 
 .search_title {
@@ -251,6 +309,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 96px;
+  margin-bottom: 20px;
 }
 
 .search_desc {
@@ -265,6 +325,7 @@ body {
   width: 592px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .search_openmodalbutton {
@@ -277,17 +338,22 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  cursor: pointer;
   color: #FFFFFF;
   display: block;
   margin: 0 auto;
   border: none;
   outline: none;
+  margin-bottom: 96px;
 }
 
 .subscribe {
   background-image: url(../images/background-blurred-mountainous-canyon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 96px 0 104px 0;
 }
 
 .subscribe_title {
@@ -300,6 +366,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .subscribe_desc {
@@ -311,6 +378,9 @@ body {
   letter-spacing: 0%;
   text-align: center;
   color: #FFFFFF;
+  margin: 0 auto;
+  width: 475px;
+  margin-bottom: 54px;
 }
 .subscribe_container {
   width: 100%;
@@ -326,6 +396,13 @@ body {
   letter-spacing: 0%;
   vertical-align: middle;
   color: #000000;
+  width: 100%;
+  max-width: 452px;
+  padding: 14px 0 14px 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+  outline: none;
 }
 
 .subscribe_container--button {
@@ -341,6 +418,10 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   border: none;
+  padding: 8px 50px;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .footer {
   width: 100%;
@@ -349,6 +430,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
 }
 .footer_socials {
   list-style: none;
@@ -356,6 +439,7 @@ body {
   max-width: 150px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer_phone {
   font-family: PT Sans;

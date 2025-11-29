@@ -21,7 +21,7 @@
                 <a href="#">О Седоне</a>
               </li>
               <li class="header_navigation--linklist--item">
-                <a href="hotels.html">Гостиницы</a>
+                <a>Гостиницы</a>
               </li>
             </ul>
             <ul class="header_navigation--interactlist">
@@ -31,7 +31,7 @@
               </li>
               <li class="header_navigation--interactlist--item">
                 <a class="header_navigation--interactlist--item--favorite" href="#">
-                  <button class="header_navigation--interactlist--item--favorite--quantity">12</button>
+                  <span class="header_navigation--interactlist--item--favorite--quantity">12</span>
                 </a>
               </li>
               <li class="header_navigation--interactlist--item--wantthere">
@@ -42,94 +42,96 @@
         </nav>
       </header>
       <main data-test="main">
-        <div class="filters_background">
-          <section class="hotels">
-            <h1 class="hotels_title">Гостиницы Седоны</h1>
-            <ul class="hotels_breadcrumbs">
-              <li class="hotels_breadcrumbs--item">
-                <a href="index.html"><img src="images/minihome.svg" alt="На главную"></a>
-              </li>
-              <li class="hotels_breadcrumbs--item"></li>
-              <li class="hotels_breadcrumbs--item">
-                <a href="#">Гостиницы</a>
-              </li>
-            </ul>
-          </section>
-          <section class="filters" data-test="filter">
-            <h2 class="filters_title visually_hidden"></h2>
-            <form class="filters_container" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="filters_container--housingtype">
-                <fieldset class="filters_container--content">
-                  <legend class="filters_container--content--title">Инфраструктура:</legend>
-                  <ul class="filters_container--content--inputlist">
-                    <li class="filters_container--content--inputlist--item">
-                      <label class="filters_container--content--inputlist--item--label" for="pool">
-                        <input class="filters_container--content--inputlist--item--label--input" name="infastracture"
-                          type="checkbox" id="pool" value="pool" checked>
-                        Бассейн
-                      </label>
-                    </li>
-                    <li class="filters_container--content--inputlist--item">
-                      <label class="filters_container--content--inputlist--item--label" for="parkinglot">
-                        <input class="filters_container--content--inputlist--item--label--input" name="infastracture"
-                          type="checkbox" id="parkinglot" value="parkinglot" checked>
-                        Парковка
-                      </label>
-                    </li>
-                    <li class="filters_container--content--inputlist--item">
-                      <label class="filters_container--content--inputlist--item--label" for="wifi">
-                        <input class="filters_container--content--inputlist--item--label--input" name="infastracture"
-                          type="checkbox" id="wifi" value="wifi">
-                        Wi-Fi
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="filters_container--content">
-                  <legend class="filters_container--content--title">Тип жилья:</legend>
-                  <ul class="filters_container--content--inputlist">
-                    <li class="filters_container--content--inputlist--item">
-                      <label class="filters_container--content--inputlist--item--label" for="hotel">
-                        <input class="filters_container--content--inputlist--item--label--input" type="radio"
-                          name="housing_type" id="hotel" value="hotel" checked>
-                        Гостиница
-                      </label>
-                    </li>
-                    <li class="filters_container--content--inputlist--item">
-                      <label class="filters_container--content--inputlist--item--label" for="motel">
-                        <input class="filters_container--content--inputlist--item--label--input" type="radio"
-                          name="housing_type" id="motel" value="motel">
-                        Мотель
-                      </label>
-                    </li>
-                    <li class="filters_container--content--inputlist--item">
-                      <label class="filters_container--content--inputlist--item--label" for="apartment">
-                        <input class="filters_container--content--inputlist--item--label--input" type="radio"
-                          name="housing_type" id="apartment" value="apartment">
-                        Апартаменты
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div class="filters_container--pricewrapper">
-                <fieldset class="filters_container--price">
-                  <legend class="filters_container--price--title">Стоимость, ₽:</legend>
-                  <div class="filters_container--price--boundaries">
-                    <input class="filters_container--price--boundaries--input" type="number" name="from" placeholder="от"
-                      value="0">
-                    <input class="filters_container--price--boundaries--input" type="number" name="to" placeholder="до"
-                      value="9000">
-                  </div>
-                  <img class="filters_container--price--slider" src="#" alt="">
-                </fieldset>
-                <div class="filters_conf">
-                  <button class="filters_container--apply" type="submit">Применить</button>
-                  <button class="filters_container--reset" type="reset">Сбросить</button>
+        <div class="filter_background">
+          <div class="filter_container">
+            <section class="hotels">
+              <h1 class="hotels_title">Гостиницы Седоны</h1>
+              <ul class="hotels_breadcrumbs">
+                <li class="hotels_breadcrumbs--item">
+                  <a href="index.html"><img src="images/minihome.svg" alt="На главную"></a>
+                </li>
+                <li class="hotels_breadcrumbs--item"></li>
+                <li class="hotels_breadcrumbs--item">
+                  <a href="#">Гостиницы</a>
+                </li>
+              </ul>
+            </section>
+            <section class="filters" data-test="filter">
+              <h2 class="filters_title visually_hidden"></h2>
+              <form class="filters_container" action="https://echo.htmlacademy.ru/" method="post">
+                <div class="filters_container--housingtype">
+                  <fieldset class="filters_container--content">
+                    <legend class="filters_container--content--title">Инфраструктура:</legend>
+                    <ul class="filters_container--content--inputlist">
+                      <li class="filters_container--content--inputlist--item">
+                        <label class="filters_container--content--inputlist--item--label" for="pool">
+                          <input class="filters_container--content--inputlist--item--label--input" name="infastracture"
+                            type="checkbox" id="pool" value="pool" checked>
+                          Бассейн
+                        </label>
+                      </li>
+                      <li class="filters_container--content--inputlist--item">
+                        <label class="filters_container--content--inputlist--item--label" for="parkinglot">
+                          <input class="filters_container--content--inputlist--item--label--input" name="infastracture"
+                            type="checkbox" id="parkinglot" value="parkinglot" checked>
+                          Парковка
+                        </label>
+                      </li>
+                      <li class="filters_container--content--inputlist--item">
+                        <label class="filters_container--content--inputlist--item--label" for="wifi">
+                          <input class="filters_container--content--inputlist--item--label--input" name="infastracture"
+                            type="checkbox" id="wifi" value="wifi">
+                          Wi-Fi
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="filters_container--content">
+                    <legend class="filters_container--content--title">Тип жилья:</legend>
+                    <ul class="filters_container--content--inputlist">
+                      <li class="filters_container--content--inputlist--item">
+                        <label class="filters_container--content--inputlist--item--label" for="hotel">
+                          <input class="filters_container--content--inputlist--item--label--input" type="radio"
+                            name="housing_type" id="hotel" value="hotel" checked>
+                          Гостиница
+                        </label>
+                      </li>
+                      <li class="filters_container--content--inputlist--item">
+                        <label class="filters_container--content--inputlist--item--label" for="motel">
+                          <input class="filters_container--content--inputlist--item--label--input" type="radio"
+                            name="housing_type" id="motel" value="motel">
+                          Мотель
+                        </label>
+                      </li>
+                      <li class="filters_container--content--inputlist--item">
+                        <label class="filters_container--content--inputlist--item--label" for="apartment">
+                          <input class="filters_container--content--inputlist--item--label--input" type="radio"
+                            name="housing_type" id="apartment" value="apartment">
+                          Апартаменты
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
                 </div>
-              </div>
-            </form>
-          </section>
+                <div class="filters_container--pricewrapper">
+                  <fieldset class="filters_container--price">
+                    <legend class="filters_container--price--title">Стоимость, ₽:</legend>
+                    <div class="filters_container--price--boundaries">
+                      <input class="filters_container--price--boundaries--input" type="number" name="from" placeholder="от"
+                        value="0">
+                      <input class="filters_container--price--boundaries--input" type="number" name="to" placeholder="до"
+                        value="9000">
+                    </div>
+                    <img class="filters_container--price--slider" src="#" alt="">
+                  </fieldset>
+                  <div class="filters_conf">
+                    <button class="filters_container--apply" type="submit">Применить</button>
+                    <button class="filters_container--reset" type="reset">Сбросить</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </div>
         </div>
         <section class="find" data-test="catalog">
           <div class="find_maininfo">
@@ -152,14 +154,15 @@
               </li>
             </ul>
           </div>
-
           <ul class="find_container">
             <li class="find_container--content">
               <img class="find_container--content--img" src="images/hotel-1.jpg"
                 alt="Пространство между коричневыми камнями, заполненное звездами на темно-синем небе">
               <h3 class="find_container--content--title">Amara Resort & Spa</h3>
-              <p class="find_container--content--housingtype">Гостиница</p>
-              <p class="find_container--content--price">От 4000 ₽</p>
+              <div class="find_container--content--infowrapper">
+                <p class="find_container--content--housingtype">Гостиница</p>
+                <p class="find_container--content--price">От 4000 ₽</p>
+              </div>
               <a class="find_container--content--more" href="#">Подробнее</a>
               <button class="find_container--content--favorite">В избранное</button>
               <div class="find_container--content--stars">
@@ -174,8 +177,11 @@
               <img class="find_container--content--img" src="images/hotel-2.jpg"
                 alt="Радуга над лесистым горизонтом впадает прямо в огромные коричневые камни">
               <h3 class="find_container--content--title">Villas at Poco Diablo</h3>
-              <p class="find_container--content--housingtype">Гостиница</p>
-              <p class="find_container--content--price">От 5000 ₽</p>
+              <div class="find_container--content--infowrapper">
+                <p class="find_container--content--housingtype">Гостиница</p>
+                <p class="find_container--content--price">От 5000 ₽</p>
+              </div>
+
               <a class="find_container--content--more" href="#">Подробнее</a>
               <button class="find_container--content--favorite">В избранном</button>
               <div class="find_container--content--stars">
@@ -190,8 +196,10 @@
               <img class="find_container--content--img" src="images/hotel-3.jpg"
                 alt="Огромная коричневая гора из коричневых камней над лесистым горизонтом и на фоне синего неба">
               <h3 class="find_container--content--title">Desert Quail Inn</h3>
-              <p class="find_container--content--housingtype">Гостиница</p>
-              <p class="find_container--content--price">От 2500 ₽</p>
+              <div class="find_container--content--infowrapper">
+                <p class="find_container--content--housingtype">Гостиница</p>
+                <p class="find_container--content--price">От 2500 ₽</p>
+              </div>
               <a class="find_container--content--more" href="#">Подробнее</a>
               <button class="find_container--content--favorite">В избранное</button>
               <div class="find_container--content--stars">
@@ -205,8 +213,10 @@
               <img class="find_container--content--img" src="images/hotel-4.jpg"
                 alt="Небольшая коричневая гора на фоне оранжевого звёздного неба">
               <h3 class="find_container--content--title">GreenTree Inn</h3>
-              <p class="find_container--content--housingtype">Гостиница</p>
-              <p class="find_container--content--price">От 1500 ₽</p>
+              <div class="find_container--content--infowrapper">
+                <p class="find_container--content--housingtype">Гостиница</p>
+                <p class="find_container--content--price">От 1500 ₽</p>
+              </div>
               <a class="find_container--content--more" href="#">Подробнее</a>
               <button class="find_container--content--favorite">В избранное</button>
               <div class="find_container--content--stars">
