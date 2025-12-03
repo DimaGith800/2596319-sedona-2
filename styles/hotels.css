@@ -173,6 +173,7 @@ body {
 }
 .filters_container--content {
   border: none;
+  padding: 0;
 }
 .filters_container--content--inputlist {
   list-style: none;
@@ -319,13 +320,14 @@ body {
 }
 .find_container {
   padding-left: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  grid-template-rows: 438px 438px;
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 40px;
   margin-bottom: 40px;
+  gap: 20px;
 }
 .find_container--content {
   border: 1px solid #e5e5e5;
@@ -349,6 +351,14 @@ body {
   align-items: center;
   margin-bottom: 16px;
 }
+
+.find_container--content--interactwrapper {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 36px 36px;
+  gap: 16px;
+}
+
 .find_container--content--housingtype {
   font-family: PT Sans;
   font-weight: 400;
@@ -385,8 +395,13 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   text-decoration: none;
+  padding: 8px 26px;
+  cursor: pointer;
+  border-radius: 4px;
 }
-
+.find_container--content--stars {
+  padding: 10px 0;
+}
 .find_container--content--favorite {
   font-family: PT Sans;
   font-weight: 700;
@@ -399,6 +414,10 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 .find_container--content:nth-child(2) .find_container--content--favorite {
   background-color: #7DB54F;
@@ -413,6 +432,9 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+  background-color: #F2F2F2;
+  padding: 8px 22px;
+  border-radius: 4px;
 }
 .find_container--pagination {
   width: 100%;
@@ -485,6 +507,7 @@ body {
   margin: 0 auto;
   display: flex;
   margin-top: 54px;
+  margin-bottom: 104px;
 }
 .subscribe_container--input {
   font-family: PT Sans;
@@ -539,6 +562,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 .footer_phone {
   font-family: PT Sans;

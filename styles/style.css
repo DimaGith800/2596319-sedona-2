@@ -36,7 +36,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
+.header_navigation--logo {
+  margin-bottom: -6px;
+}
 .header_navigation--container {
   width: 100%;
   max-width: 893px;
@@ -118,7 +120,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 70px;
-  margin-top: -6px;
 }
 
 .welcome_img {
@@ -160,25 +161,58 @@ body {
 .pros_container {
   list-style: none;
   padding-left: 0;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: repeat(3, 385px);
+  grid-template-areas:
+  "realcity cityimg cityimg"
+  "cityarea gorgeousroad notourists"
+  "canyon canyon devilsbridge";
 }
 
 .pros_container--reason {
-  padding: 102px 0;
-  width: 400px;
+  padding: 102px 85px;
 }
 .pros_container--reason:nth-child(1) {
   background-color: #82B3D3;
+  grid-area: realcity;
+}
+.pros_container--townhall {
+  grid-area: cityimg;
+}
+
+.pros_container--reason:nth-child(3) {
+  background-color: #83B3D31F;
+  grid-area: cityarea;
+}
+
+.pros_container--reason:nth-child(4) {
+  background-color: #83B3D333;
+  grid-area: gorgeousroad;
+}
+
+.pros_container--reason:nth-child(5) {
+  background-color: #83B3D31F;
+  grid-area: notourists;
+}
+
+.pros_container--img {
+  grid-area: canyon;
+}
+.pros_container--reason:nth-child(7) {
+  background-color: #82B3D3;
+  grid-area: devilsbridge;
 }
 
 .pros_container--reason:nth-child(1) .pros_container--reason--title {
   color: #FFFFFF;
+  width: 175px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .pros_container--reason:nth-child(1) .pros_container--reason--desc {
   color: #FFFFFF;
-}
-.pros_container--reason:nth-child(7) {
-  background-color: #82B3D3;
 }
 
 .pros_container--reason:nth-child(7) .pros_container--reason--title {
@@ -187,18 +221,6 @@ body {
 
 .pros_container--reason:nth-child(7) .pros_container--reason--desc {
   color: #FFFFFF;
-}
-
-.pros_container--reason:nth-child(3) {
-  background-color: #83B3D31F;
-}
-
-.pros_container--reason:nth-child(5) {
-  background-color: #83B3D31F;
-}
-
-.pros_container--reason:nth-child(4) {
-  background-color: #83B3D333;
 }
 
 .pros_container--reason--title {
@@ -440,6 +462,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 .footer_phone {
   font-family: PT Sans;
