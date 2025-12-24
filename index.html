@@ -186,15 +186,61 @@
         </a>
       </footer>
     </div>
-    <div class="modal_container" id="modal" data-modal>
-      <form class="modal_container--content">
-          <span class="modal_container--close" id="closeModalBtn">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.8113 4.10362L15.519 2.81131L9.81128 8.519L4.10359 2.81131L2.81128 4.10362L8.51897 9.81131L2.81128 15.519L4.10359 16.8113L9.81128 11.1036L15.519 16.8113L16.8113 15.519L11.1036 9.81131L16.8113 4.10362Z" fill="black"/>
-            </svg>
-          </span>
+    <section class="modal_container" id="modal" data-modal>
+      <form class="modal_container--content" action="https://echo.htmlacademy.ru/">
+        <span class="modal_container--close" id="closeModalBtn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.8113 4.10362L15.519 2.81131L9.81128 8.519L4.10359 2.81131L2.81128 4.10362L8.51897 9.81131L2.81128 15.519L4.10359 16.8113L9.81128 11.1036L15.519 16.8113L16.8113 15.519L11.1036 9.81131L16.8113 4.10362Z"/>
+          </svg>
+        </span>
+        <h2 class="modal_container--content--title">Поиск гостиницы в Седоне</h2>
+        <label class="modal_container--content--configure" for="movein-date">
+          <p class="modal_container--content--configure--date">Дата заезда:</p>
+          <div class="modal_container--content--configure--wrapper">
+            <div class="modal_container--content--configure--wrapper--input">
+              <input name="movein-date" type="text" value="27 апреля 2020" placeholder="Введите дату заезда" required>
+            </div>
+            <p class="modal_container--content--configure--wrapper--error">Мы не можем отправить вас в прошлое.</p>
+          </div>
+        </label>
+        <label class="modal_container--content--configure" for="moveout-date">
+          <p class="modal_container--content--configure--date">Дата выезда:</p>
+          <div class="modal_container--content--configure--wrapper">
+            <div class="modal_container--content--configure--wrapper--input">
+              <input name="moveout-date" type="text" value="1 сентября 2023" placeholder="Введите дату выезда" required>
+            </div>
+            <p class="modal_container--content--configure--wrapper--accepted">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+        </label>
+        <div class="modal_container--content--visitorswrapper">
+          <label class="modal_container--content--visitorswrapper--parentscount" for="parents-count">
+            <p class="modal_container--content--visitorswrapper--parentscount--text">Взрослые:</p>
+            <div class="modal_container--content--visitorswrapper--parentscount--stepper">
+              <button class="modal_container--content--visitorswrapper--parentscount--stepper--step" type="button" onclick="this.parentNode.querySelector('input').stepDown()">–</button>
+              <input name="parents-count" class="modal_container--content--visitorswrapper--parentscount--stepper--amount" type="number" value="2" min="1" readonly>
+              <button class="modal_container--content--visitorswrapper--parentscount--stepper--step" type="button" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+            </div>
+          </label>
+          <label class="modal_container--content--visitorswrapper--childrencount" for="children-count">
+            <div class="modal_container--content--visitorswrapper--childrencount--forwhowrapper">
+              <p class="modal_container--content--visitorswrapper--childrencount--forwhowrapper--text">Дети: </p>
+              <div class="modal_container--content--visitorswrapper--childrencount--forwhowrapper--tooltip">
+                <span class="modal_container--content--visitorswrapper--childrencount--forwhowrapper--tooltip--icon">i</span>
+                <div class="modal_container--content--visitorswrapper--childrencount--forwhowrapper--tooltip--content">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </div>
+              </div>
+            </div>
+            <div class="modal_container--content--visitorswrapper--childrencount--stepper">
+              <button class="modal_container--content--visitorswrapper--childrencount--stepper--step" type="button" onclick="this.parentNode.querySelector('input').stepDown()">–</button>
+              <input name="children-count" class="modal_container--content--visitorswrapper--childrencount--stepper--amount" type="number" value="2" min="1" readonly>
+              <button class="modal_container--content--visitorswrapper--childrencount--stepper--step" type="button" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+            </div>
+          </label>
+        </div>
+        <button class="modal_container--content--search" type="submit">Найти</button>
       </form>
-    </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

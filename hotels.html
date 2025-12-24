@@ -126,12 +126,23 @@
                   <fieldset class="filters_container--price">
                     <legend class="filters_container--price--title">Стоимость, ₽:</legend>
                     <div class="filters_container--price--boundaries">
-                      <input class="filters_container--price--boundaries--input" type="number" name="from" placeholder="от"
-                        value="0">
-                      <input class="filters_container--price--boundaries--input" type="number" name="to" placeholder="до"
-                        value="9000">
+                      <div class="filters_container--price--boundaries--wrapper">
+                        <input class="filters_container--price--boundaries--wrapper--input" type="number" name="from" placeholder="от"
+                          value="0">
+                        <span class="filters_container--price--boundaries--wrapper--hint">от</span>
+                      </div>
+                      <div class="filters_container--price--boundaries--wrapper">
+                        <input class="filters_container--price--boundaries--wrapper--input" type="number" name="from" placeholder="от"
+                          value="9000">
+                        <span class="filters_container--price--boundaries--wrapper--hint">до</span>
+                      </div>
                     </div>
-                    <img class="filters_container--price--slider" src="#" alt="">
+                    <div class="filters_container--pricewrapper--slider">
+                      <button class="filters_container--pricewrapper--slider--rangebutton"></button>
+                      <div class="filters_container--pricewrapper--slider--whiteline">a</div>
+                      <button class="filters_container--pricewrapper--slider--rangebutton"></button>
+                      <div class="filters_container--pricewrapper--slider--greyline">a</div>
+                    </div>
                   </fieldset>
                   <div class="filters_conf">
                     <button class="filters_container--apply" type="submit">Применить</button>
