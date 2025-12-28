@@ -16,6 +16,7 @@
 body {
   background-color: #f2f2f2;
   padding: 0 40px;
+  margin: 0;
 }
 a:focus,
 button:focus {
@@ -27,6 +28,10 @@ button:focus {
   display: none;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
 .page_container {
   width: 100%;
   max-width: 1200px;
@@ -40,7 +45,6 @@ button:focus {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 42px;
 }
 .header_navigation--logo {
   margin-bottom: -6px;
@@ -55,12 +59,12 @@ button:focus {
 
 .header_navigation--linklist {
   width: 100%;
-  max-width: 308px;
+  max-width: 339px;
   display: flex;
-  justify-content: space-between;
   list-style: none;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 .header_navigation--linklist--item a {
   font-family: PT Sans;
@@ -72,12 +76,21 @@ button:focus {
   text-transform: capitalize;
   color: #000000;
   text-decoration: none;
+  padding: 20px 16px;
+}
+.header_navigation--linklist--item:nth-child(1) a{
+  text-decoration: underline;
+  text-underline-offset: 21px;
+  text-decoration-thickness: 2px;
+  -webkit-text-decoration-color: #756257;
+          text-decoration-color: #756257;
 }
 .header_navigation--linklist--item a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 21px;
-  text-decoration-color: #756257;
+  -webkit-text-decoration-color: #756257;
+          text-decoration-color: #756257;
 }
 .header_navigation--interactlist {
   width: 100%;
@@ -122,6 +135,7 @@ button:focus {
   text-decoration: none;
   padding: 8px 34px;
   border-radius: 4px;
+  margin-left: 18px;
 }
 .header_navigation--interactlist--item--wantthere a:hover {
   background-color: #615048;
@@ -169,14 +183,15 @@ button:focus {
   padding: 5px;
   border-radius: 50%;
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 7px;
+  right: 5px;
 }
 .welcome {
   background-image: url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 70px;
+  background-color:#68A2CA
 }
 
 .welcome_img {
@@ -228,35 +243,52 @@ button:focus {
 }
 
 .pros_container--reason {
-  padding: 112px 85px;
+  padding: 102px 85px;
+  max-width: 400px;
 }
 .pros_container--reason:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   background-color: #82B3D3;
   grid-area: realcity;
 }
 .pros_container--townhall {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: cityimg;
 }
 
 .pros_container--reason:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   background-color: #83B3D31F;
   grid-area: cityarea;
 }
 
 .pros_container--reason:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   background-color: #83B3D333;
   grid-area: gorgeousroad;
 }
 
 .pros_container--reason:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   background-color: #83B3D31F;
   grid-area: notourists;
 }
 
 .pros_container--img {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: canyon;
 }
 .pros_container--reason:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   background-color: #82B3D3;
   grid-area: devilsbridge;
 }
@@ -274,6 +306,7 @@ button:focus {
 
 .pros_container--reason:nth-child(7) .pros_container--reason--title {
   color: #FFFFFF;
+  margin-top: 1px;
 }
 
 .pros_container--reason:nth-child(7) .pros_container--reason--desc {
@@ -289,11 +322,11 @@ button:focus {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-
   width: 172px;
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
+  margin-top: 9px;
 }
 
 .pros_container--reason--desc {
@@ -351,6 +384,7 @@ button:focus {
   text-align: center;
   color: #333333;
   margin-bottom: 64px;
+  margin-top: 6px;
 }
 
 .whyus_container {
@@ -365,7 +399,9 @@ button:focus {
   background-color: #83B3D31F;
 }
 .whyus_container--content{
-  padding: 79px 85px;
+  padding: 81px 85px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .whyus_container--content:nth-child(1) .whyus_container--content--title::before {
@@ -391,8 +427,11 @@ button:focus {
   margin: 0 auto;
   content: "";
   width: 75px;
-  height: 76px;
+  height: 72px;
   background-image: url(../images/gift.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 30px;
 }
 .whyus_container--content:nth-child(1) .whyus_container--content--title {
@@ -401,8 +440,9 @@ button:focus {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
 .whyus_container--content--title {
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 24px;
@@ -416,7 +456,7 @@ button:focus {
 }
 
 .whyus_container--content--desc {
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
@@ -424,12 +464,13 @@ button:focus {
   letter-spacing: 0%;
   text-align: center;
   color: #333333;
-  width: 230px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 230px;
+  margin: 0;
 }
 
 .search_title {
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 30px;
@@ -443,7 +484,7 @@ button:focus {
 }
 
 .search_desc {
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 22px;
@@ -458,7 +499,7 @@ button:focus {
 }
 
 .search_openmodalbutton {
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 20px;
@@ -491,6 +532,7 @@ button:focus {
 }
 
 .subscribe {
+  background: linear-gradient(to bottom right, #68A2CA 0%, #756157 100%);
   background-image: url(../images/background-blurred-mountainous-canyon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -498,7 +540,7 @@ button:focus {
 }
 
 .subscribe_title {
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 30px;
@@ -512,7 +554,7 @@ button:focus {
 }
 
 .subscribe_desc {
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 22px;
@@ -531,7 +573,7 @@ button:focus {
   display: flex;
 }
 .subscribe_container--input {
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -592,14 +634,13 @@ button:focus {
   width: 100%;
   max-width: 142px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
-.footer_socials_social--link {
-  border: red;
+.footer_socials--social--link {
+  padding: 13px;
 }
 .footer_socials--social--link svg:hover,
 .footer_socials--social--link svg:focus {
@@ -635,7 +676,9 @@ button:focus {
 .footer_author svg:active {
   fill: #7561574D;
 }
-
+.footer_author {
+  margin-top: 10px;
+}
 .modal_container {
   position: fixed;
   top: 0;
@@ -830,7 +873,8 @@ button:focus {
   font-size: 20px;
   color: #a6a6a6;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
 }
 
 .modal_container--content--visitorswrapper--parentscount--stepper--step:hover {
@@ -889,7 +933,7 @@ button:focus {
 }
 
 .modal_container--content--visitorswrapper--childrencount--forwhowrapper--tooltip--icon {
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 20px;
@@ -909,7 +953,7 @@ button:focus {
   background-color: #82B1D0;
   color: #FFFFFF;
   border-radius: 50%;
-  font-family: Arial, sans-serif;
+  font-family: PT Sans, sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 0;
@@ -928,7 +972,7 @@ button:focus {
   color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -970,7 +1014,8 @@ button:focus {
   font-size: 20px;
   color: #a6a6a6;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
 }
 
 .modal_container--content--visitorswrapper--childrencount--stepper--step:hover {
@@ -978,7 +1023,7 @@ button:focus {
 }
 
 .modal_container--content--visitorswrapper--childrencount--stepper--amount {
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;

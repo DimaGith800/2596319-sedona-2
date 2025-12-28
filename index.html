@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона, Городок в Аризоне</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="page_container">
@@ -25,7 +26,7 @@
               </li>
             </ul>
             <ul class="header_navigation--interactlist">
-              <div class="header_navigation--interactlist--wrapper">
+              <li class="header_navigation--interactlist--wrapper">
                 <li class="header_navigation--interactlist--item">
                   <a class="header_navigation--interactlist--item--search" href="#">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="black" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +44,6 @@
                     <span class="header_navigation--interactlist--item--favorite--quantity">12</span>
                   </a>
                 </li>
-              </div>
               <li class="header_navigation--interactlist--item--wantthere">
                 <a href="#">Хочу сюда!</a>
               </li>
@@ -55,7 +55,7 @@
         <section class="welcome" data-test="hero">
           <h1 class="welcome_title visually_hidden">Седона, городок в Аризоне</h1>
           <img class="welcome_img" src="images/welcometosedona.svg"
-            alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+            alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" width="458" height="352">
         </section>
         <section class="pros" data-test="advantages">
           <h2 class="pros_title">Седона — небольшой городок в Аризоне,
@@ -69,7 +69,7 @@
               <p class="pros_container--reason--desc">Седона — не аттракцион для туристов, там течёт своя
                 жизнь</p>
             </li>
-            <li class="pros_container--townhall"><img src="images/townhall.jpg" alt="В Седоне лучше, чем в мегаполисах">
+            <li class="pros_container--townhall"><img src="images/townhall.jpg" alt="В Седоне лучше, чем в мегаполисах" width="800" height="385">
             </li>
             <li class="pros_container--reason">
               <h3 class="pros_container--reason--title">Небольшая площадь</h3>
@@ -86,7 +86,7 @@
               <div class="pros_container--reason--border"></div>
               <p class="pros_container--reason--desc">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="pros_container--img"><img src="images/canyon.jpg" alt="Гранд Каньон"></li>
+            <li class="pros_container--img"><img src="images/canyon.jpg" alt="Гранд Каньон" width="800" height="385"></li>
             <li class="pros_container--reason">
               <h3 class="pros_container--reason--title">Там есть мост дьявола</h3>
               <div class="pros_container--reason--blueishborder"></div>
@@ -101,12 +101,12 @@
           <ul class="whyus_container">
             <li class="whyus_container--content">
               <h3 class="whyus_container--content--title">Жильё</h3>
-              <p class="whyus_container--content--desc">Рекомендуем пожить в настоящем мотеле, всё как в
+              <p class="whyus_container--content--desc">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в
                 кино!</p>
             </li>
             <li class="whyus_container--content">
               <h3 class="whyus_container--content--title">Еда</h3>
-              <p class="whyus_container--content--desc">Всегда заказывайте <br>топовый фирменный бургер, вы не
+              <p class="whyus_container--content--desc">Всегда заказывайте <br>топовый фирменный бургер, <br>вы не
                 разочаруетесь!</p>
             </li>
             <li class="whyus_container--content">
@@ -186,7 +186,7 @@
         </a>
       </footer>
     </div>
-    <section class="modal_container" id="modal" data-modal>
+<section class="modal_container" id="modal" data-modal>
       <form class="modal_container--content" action="https://echo.htmlacademy.ru/">
         <span class="modal_container--close" id="closeModalBtn">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="black" xmlns="http://www.w3.org/2000/svg">
@@ -194,36 +194,36 @@
           </svg>
         </span>
         <h2 class="modal_container--content--title">Поиск гостиницы в Седоне</h2>
-        <label class="modal_container--content--configure" for="movein-date">
-          <p class="modal_container--content--configure--date">Дата заезда:</p>
+        <div class="modal_container--content--configure">
+          <label class="modal_container--content--configure--date" for="movein-date">Дата заезда:</label>
           <div class="modal_container--content--configure--wrapper">
             <div class="modal_container--content--configure--wrapper--input">
-              <input name="movein-date" type="text" value="27 апреля 2020" placeholder="Введите дату заезда" required>
+              <input name="movein-date" id="movein-date" type="text" value="27 апреля 2020" placeholder="Введите дату заезда" required>
             </div>
             <p class="modal_container--content--configure--wrapper--error">Мы не можем отправить вас в прошлое.</p>
           </div>
-        </label>
-        <label class="modal_container--content--configure" for="moveout-date">
-          <p class="modal_container--content--configure--date">Дата выезда:</p>
+        </div>
+        <div class="modal_container--content--configure">
+          <label class="modal_container--content--configure--date" for="moveout-date">Дата выезда:</label>
           <div class="modal_container--content--configure--wrapper">
             <div class="modal_container--content--configure--wrapper--input">
-              <input name="moveout-date" type="text" value="1 сентября 2023" placeholder="Введите дату выезда" required>
+              <input name="moveout-date" id="moveout-date" type="text" value="1 сентября 2023" placeholder="Введите дату выезда" required>
             </div>
             <p class="modal_container--content--configure--wrapper--accepted">На эти даты есть свободные номера. Пока есть.</p>
           </div>
-        </label>
+        </div>
         <div class="modal_container--content--visitorswrapper">
-          <label class="modal_container--content--visitorswrapper--parentscount" for="parents-count">
-            <p class="modal_container--content--visitorswrapper--parentscount--text">Взрослые:</p>
+          <div class="modal_container--content--visitorswrapper--parentscount">
+            <label class="modal_container--content--visitorswrapper--parentscount--text" for="parents-count">Взрослые:</label>
             <div class="modal_container--content--visitorswrapper--parentscount--stepper">
               <button class="modal_container--content--visitorswrapper--parentscount--stepper--step" type="button" onclick="this.parentNode.querySelector('input').stepDown()">–</button>
-              <input name="parents-count" class="modal_container--content--visitorswrapper--parentscount--stepper--amount" type="number" value="2" min="1" readonly>
+              <input name="parents-count" id="parents-count" class="modal_container--content--visitorswrapper--parentscount--stepper--amount" type="number" value="2" min="1" readonly>
               <button class="modal_container--content--visitorswrapper--parentscount--stepper--step" type="button" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
             </div>
-          </label>
-          <label class="modal_container--content--visitorswrapper--childrencount" for="children-count">
+          </div>
+          <div class="modal_container--content--visitorswrapper--childrencount">
             <div class="modal_container--content--visitorswrapper--childrencount--forwhowrapper">
-              <p class="modal_container--content--visitorswrapper--childrencount--forwhowrapper--text">Дети: </p>
+              <label class="modal_container--content--visitorswrapper--childrencount--forwhowrapper--text" for="children-count">Дети: </label>
               <div class="modal_container--content--visitorswrapper--childrencount--forwhowrapper--tooltip">
                 <span class="modal_container--content--visitorswrapper--childrencount--forwhowrapper--tooltip--icon">i</span>
                 <div class="modal_container--content--visitorswrapper--childrencount--forwhowrapper--tooltip--content">
@@ -233,10 +233,10 @@
             </div>
             <div class="modal_container--content--visitorswrapper--childrencount--stepper">
               <button class="modal_container--content--visitorswrapper--childrencount--stepper--step" type="button" onclick="this.parentNode.querySelector('input').stepDown()">–</button>
-              <input name="children-count" class="modal_container--content--visitorswrapper--childrencount--stepper--amount" type="number" value="2" min="1" readonly>
+              <input name="children-count" id="children-count" class="modal_container--content--visitorswrapper--childrencount--stepper--amount" type="number" value="2" min="1" readonly>
               <button class="modal_container--content--visitorswrapper--childrencount--stepper--step" type="button" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
             </div>
-          </label>
+          </div>
         </div>
         <button class="modal_container--content--search" type="submit">Найти</button>
       </form>

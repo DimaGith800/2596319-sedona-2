@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы в Седоне</title>
     <link rel="stylesheet" href="styles/hotels.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="page_container">
@@ -25,7 +26,7 @@
               </li>
             </ul>
             <ul class="header_navigation--interactlist">
-              <div class="header_navigation--interactlist--wrapper">
+              <li class="header_navigation--interactlist--wrapper">
                 <li class="header_navigation--interactlist--item">
                   <a class="header_navigation--interactlist--item--search" href="#">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="black" xmlns="http://www.w3.org/2000/svg">
@@ -43,9 +44,8 @@
                     <span class="header_navigation--interactlist--item--favorite--quantity">12</span>
                   </a>
                 </li>
-              </div>
-              <li class="header_navigation--interactlist--item--wantthere">
-                <a href="#">Хочу сюда!</a>
+                <li class="header_navigation--interactlist--item--wantthere">
+                  <a href="#">Хочу сюда!</a>
               </li>
             </ul>
           </div>
@@ -66,7 +66,7 @@
               </ul>
             </section>
             <section class="filters" data-test="filter">
-              <h2 class="filters_title visually_hidden"></h2>
+              <h2 class="filters_title visually_hidden">Фильтры</h2>
               <form class="filters_container" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="filters_container--housingtype">
                   <fieldset class="filters_container--content">
@@ -156,26 +156,29 @@
         <section class="find" data-test="catalog">
           <div class="find_maininfo">
             <h2 class="find_title">Найдено гостиниц: 38</h2>
-            <select class="find_sortingselect" name="sort" id="sortselect">
-              <option class="find_sortingselect--option" value="cheapest first" selected>Сначала дешевые</option>
-            </select>
-            <ul class="find_appearance">
-              <li class="find_appearance--item">
-                <button class="find_appearance--item--button">
-                  <span class="visually_hidden">Сеточный режим просмотра</span>
-                </button>
-              </li>
-              <li class="find_appearance--item">
-                <button class="find_appearance--item--button">
-                  <span class="visually_hidden">Десктопный режим просмотра</span>
-                </button>
-              </li>
-              <li class="find_appearance--item">
-                <button class="find_appearance--item--button">
-                  <span class="visually_hidden">Списочный режим просмотра</span>
-                </button>
-              </li>
-            </ul>
+            <div class="find_maininfo--container">
+              <select class="find_sortingselect" name="sort" id="sortselect">
+                <option class="find_sortingselect--option" value="cheapest first" selected>Сначала дешевые</option>
+              </select>
+              <ul class="find_appearance">
+                <li class="find_appearance--item">
+                  <button class="find_appearance--item--button">
+                    <span class="visually_hidden">Сеточный режим просмотра</span>
+                  </button>
+                </li>
+                <li class="find_appearance--item">
+                  <button class="find_appearance--item--button">
+                    <span class="visually_hidden">Десктопный режим просмотра</span>
+                  </button>
+                </li>
+                <li class="find_appearance--item">
+                  <button class="find_appearance--item--button">
+                    <span class="visually_hidden">Списочный режим просмотра</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
           </div>
           <ul class="find_container">
             <li class="find_container--content">
